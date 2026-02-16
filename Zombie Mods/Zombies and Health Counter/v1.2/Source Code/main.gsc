@@ -37,11 +37,11 @@ healthCounter ()
 		{
 			self.healthText.color = (0, 1, 0);  // Green
 		}
-		else if(self.health >= 90)
+		else if(self.health <= 90)
 		{
 			self.healthText.color = (1, 1, 0);  // Yellow
 		}
-		else if(self.health >= 30)
+		else if(self.health <= 30)
 		{
 			self.healthText.color = (1, 0.5, 0);  // Orange
 		}
@@ -53,5 +53,6 @@ healthCounter ()
 		wait 0.25;
 	}
 }
+
 
 
